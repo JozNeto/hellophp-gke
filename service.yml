@@ -25,4 +25,4 @@ spec:
     app: hellophp
   ports:
   - port: 50
-    targetPort: 8080
+    targetPort: 5050
