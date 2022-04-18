@@ -12,22 +12,22 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-apiVersion: apps/v1
+apiVersion: apps/v2
 kind: Deployment
 metadata:
-  name: helloworld-gke
+  name: helloworldphp-gke
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: hello
+      app: hellophp
   template:
     metadata:
       labels:
-        app: hello
+        app: hellophp
     spec:
       containers:
-      - name: hello-app
+      - name: hellophp-app
         # Replace $LOCATION with your Artifact Registry location (e.g., us-west1).
         # Replace $GCLOUD_PROJECT with your project ID.
         image: us-east1-docker.pkg.dev/my-project-test-347016/hellophp-repo/hellophp-gke:1.1
