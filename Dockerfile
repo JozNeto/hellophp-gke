@@ -5,8 +5,8 @@ FROM php:7.4-apache
 # Copy local code to the container image.
 COPY index.php /var/www/html/
 
-# Use port 8080 in Apache configuration files.
-RUN sed -i 's/80/${PORT}/g' /etc/apache2/sites-available/000-default.conf /etc/apache2/ports.conf
+# Use port 5050 in Apache configuration files.
+RUN sed -i 's/50/${PORT}/g' /etc/apache2/sites-available/000-default.conf /etc/apache2/ports.conf
 
 # Configure PHP for development.
 # Switch to the production php.ini for production operations.

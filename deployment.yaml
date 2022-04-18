@@ -30,8 +30,8 @@ spec:
       - name: hello-app
         # Replace $LOCATION with your Artifact Registry location (e.g., us-west1).
         # Replace $GCLOUD_PROJECT with your project ID.
-        image: $LOCATION-docker.pkg.dev/$GCLOUD_PROJECT/hello-repo/helloworld-gke:latest
-        # This app listens on port 8080 for web traffic by default.
+        image: us-east1-docker.pkg.dev/my-project-test-347016/hellophp-repo/hellophp-gke:1.1
+        # This app listens on port 5050 for web traffic by default.
         ports:
         - containerPort: 5050
         env:
