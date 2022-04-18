@@ -1,3 +1,8 @@
-<?php
-$target = getenv('TARGET', true) ?: 'World';
-echo sprintf("Hello %s!", $target);
+<html>
+ <head>
+  <title>Teste PHP</title>
+ </head>
+ <body>
+ <?php echo "<p>Olá Mundo</p>"; ?>
+ </body>
+</html>
