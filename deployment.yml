@@ -33,7 +33,7 @@ spec:
         image: us-east1-docker.pkg.dev/my-project-test-347016/hellophp-repo/hellophp-gke:1.1
         # This app listens on port 5050 for web traffic by default.
         ports:
-        - containerPort: 8080
+        - containerPort: 5050
         env:
           - name: PORT
-            value: "8080"
+            value: "5050"
